@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Security Tracker</title>
+
+  <!-- Firebase v10 CDN Compatible Bundle -->
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+
+  <!-- ✅ Latest EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("9jfpVxJADFk2If4Nb"); // Replace with your actual public key
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Secure Login Tracker</h1>
+
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+
+    <h3>Login History</h3>
+    <ul id="log-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
