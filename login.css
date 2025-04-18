@@ -1,0 +1,97 @@
+/* style.css - Blue theme for login page */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e3f2fd; /* soft blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(33, 150, 243, 0.15);
+    width: 350px;
+    text-align: center;
+    border-top: 8px solid #2196f3;
+  }
+  
+  h1 {
+    color: #1565c0;
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #2196f3;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2196f3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #1976d2;
+  }
+  
+  h3 {
+    margin-top: 30px;
+    color: #444;
+  }
+  
+  #log-list {
+    text-align: left;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-left: 20px;
+  }
+  
+  #log-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
